@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "5ae7db57-c1f0-4b70-9e7d-563ac462b93d",
+		"name": "apbatech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13029874",
+		"_collection_link": "https://nominal-0566.postman.co/workspace/nominal-Workspace~9257ae2a-13cc-4116-adc0-6a6408e2dead/collection/13029874-5ae7db57-c1f0-4b70-9e7d-563ac462b93d?action=share&source=collection_link&creator=13029874"
+	},
+	"item": [
+		{
+			"name": "users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "no-4 array",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/test/no-4-array",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"test",
+						"no-4-array"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "no-5 string",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/test/no-5-string",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"test",
+						"no-5-string"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "no-6 terbilang",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/test/no-6-terbilang",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"test",
+						"no-6-terbilang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "genza",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token verify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"encryptData\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZF91c2VyIjoia2QwMSIsInVzZXJuYW1lIjoiZ2VuemEiLCJwYXNzd29yZCI6IiQyYiQxMCRpRjZqVFpjRFB3bjZLTG5uN0NYSFJ1cGVSY0RLRnBoOEZwSFJSTjQ4SWhPM05XcjYvVVNQYSIsIm5hbWEiOiJnZW5zYSBuYW5kb3MiLCJoYWtha3NlcyI6ImFkbWluIiwia2RrbGluaWsiOiIwMSIsImtkY2FiYW5nIjoia2MwMSIsImlhdCI6MTc2ODQ2OTI2MywiZXhwIjoxNzY4NTU1NjYzfQ.uxwINtGJ90RvwqW27pQVNOiewH4aX9Q5eSLzfgHADsA\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/decrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"decrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kd_user",
+							"value": "kd01",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "genza",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "gensa nando",
+							"type": "text"
+						},
+						{
+							"key": "hakakses",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "kdklinik",
+							"value": "01",
+							"type": "text"
+						},
+						{
+							"key": "kdcabang",
+							"value": "kc01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update users",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "genza",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "gensa nandos",
+							"type": "text"
+						},
+						{
+							"key": "hakakses",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "kdklinik",
+							"value": "01",
+							"type": "text"
+						},
+						{
+							"key": "kdcabang",
+							"value": "kc01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete users",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "genza",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
