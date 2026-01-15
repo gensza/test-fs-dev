@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const terbilang = require("../utils/terbilang");
 
 router.get("/no-4-array", async (req, res) => {
 
