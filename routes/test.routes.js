@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const terbilang = require("../utils/terbilang");
 
 router.get("/no-4-array", async (req, res) => {
 
@@ -56,6 +57,7 @@ router.get("/no-6-terbilang", async (req, res) => {
         "sebelas",
     ];
 
+    let result = "angka terlalu besar";
     if (angka < 12) {
         result = huruf[angka];
     } else if (angka < 20) {
